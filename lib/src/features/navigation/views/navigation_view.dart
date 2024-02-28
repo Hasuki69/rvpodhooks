@@ -17,7 +17,7 @@ class NavigationView extends HookConsumerWidget {
       extendBody: true,
       appBar: context.isMobile
           ? PreferredSize(
-              preferredSize: Size.fromHeight(context.appbarHeight),
+              preferredSize: Size.fromHeight(context.toolbarHeight),
               child: const NavigationAppbar(),
             )
           : null,

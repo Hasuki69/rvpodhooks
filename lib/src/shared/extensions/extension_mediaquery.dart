@@ -129,7 +129,7 @@ extension MediaQueryExtension on BuildContext {
   double get navbarHeight => kBottomNavigationBarHeight;
 
   /// Get top navigation bar height
-  double get appbarHeight => kToolbarHeight;
+  double get toolbarHeight => kToolbarHeight;
 
   /// Check if using 24-hour format
   bool get is24hFormat => mediaQuery.alwaysUse24HourFormat;
