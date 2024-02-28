@@ -19,22 +19,53 @@ extension SnackbarExtension on BuildContext {
   /// By default, the [duration] is 3 seconds
   ///
   ScaffoldFeatureController<SnackBar, SnackBarClosedReason> snackbar({
-    required String message,
-    Duration duration = const Duration(seconds: 3),
-    SnackBarAction? action,
-    EdgeInsetsGeometry? padding,
     Widget? content,
+    String? message,
+    TextStyle? style,
+    TextAlign? textAlign = TextAlign.center,
     Color? backgroundColor,
-    bool isError = false,
+    double? elevation,
+    EdgeInsetsGeometry? margin,
+    EdgeInsetsGeometry? padding,
+    double? width,
+    ShapeBorder? shape,
+    HitTestBehavior? hitTestBehavior,
+    SnackBarBehavior? behavior = SnackBarBehavior.floating,
+    SnackBarAction? action,
+    double? actionOverflowThreshold,
+    bool? showCloseIcon,
+    Color? closeIconColor,
+    Duration duration = const Duration(seconds: 3),
+    Animation<double>? animation,
+    void Function()? onVisible,
+    DismissDirection? dismissDirection,
+    Clip clipBehavior = Clip.antiAlias,
   }) {
     return ScaffoldMessenger.of(this).showSnackBar(
       SnackBar(
+        content: content ??
+            Text(
+              message ?? '',
+              style: style,
+              textAlign: textAlign,
+            ),
+        backgroundColor: backgroundColor,
+        elevation: elevation,
+        margin: margin,
         padding: padding,
-        duration: duration,
+        width: width,
+        shape: shape,
         action: action,
-        backgroundColor:
-            backgroundColor ?? (isError ? Colors.red[400] : Colors.green[400]),
-        content: content ?? Text(message),
+        actionOverflowThreshold: actionOverflowThreshold,
+        duration: duration,
+        animation: animation,
+        onVisible: onVisible,
+        dismissDirection: dismissDirection,
+        behavior: behavior,
+        clipBehavior: clipBehavior,
+        hitTestBehavior: hitTestBehavior,
+        showCloseIcon: showCloseIcon,
+        closeIconColor: closeIconColor,
       ),
     );
   }
