@@ -11,7 +11,7 @@ extension PaddingExtension on Widget {
   ///
   Widget gap(double? value) {
     return Padding(
-      padding: EdgeInsets.all(value ?? Gap.medium),
+      padding: EdgeInsets.all(value ?? Gap.m),
       child: this,
     );
   }
@@ -24,7 +24,7 @@ extension PaddingExtension on Widget {
   ///
   Widget sliverGap(double? value) {
     return SliverPadding(
-      padding: EdgeInsets.all(value ?? Gap.medium),
+      padding: EdgeInsets.all(value ?? Gap.m),
       sliver: this,
     );
   }
@@ -39,9 +39,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.symmetric
   ///
-  Widget gapSymmetric({double horizontal = 0.0, double vertical = 0.0}) {
+  Widget gapSymmetric({double horz = 0.0, double vert = 0.0}) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical),
+      padding: EdgeInsets.symmetric(horizontal: horz, vertical: vert),
       child: this,
     );
   }
@@ -56,9 +56,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.symmetric but for sliver
   ///
-  Widget sliverGapSymmetric({double horizontal = 0.0, double vertical = 0.0}) {
+  Widget sliverGapSymmetric({double horz = 0.0, double vert = 0.0}) {
     return SliverPadding(
-      padding: EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical),
+      padding: EdgeInsets.symmetric(horizontal: horz, vertical: vert),
       sliver: this,
     );
   }
@@ -137,9 +137,14 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.fromLTRB
   ///
-  Widget gapLTRB(double left, double top, double right, double bottom) {
+  Widget gapLTRB(double? left, double? top, double? right, double? bottom) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(left, top, right, bottom),
+      padding: EdgeInsets.fromLTRB(
+        left ?? Gap.m,
+        top ?? Gap.m,
+        right ?? Gap.m,
+        bottom ?? Gap.m,
+      ),
       child: this,
     );
   }
@@ -156,9 +161,15 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.fromLTRB but for sliver
   ///
-  Widget sliverGapLTRB(double left, double top, double right, double bottom) {
+  Widget sliverGapLTRB(
+      double? left, double? top, double? right, double? bottom) {
     return SliverPadding(
-      padding: EdgeInsets.fromLTRB(left, top, right, bottom),
+      padding: EdgeInsets.fromLTRB(
+        left ?? Gap.m,
+        top ?? Gap.m,
+        right ?? Gap.m,
+        bottom ?? Gap.m,
+      ),
       sliver: this,
     );
   }

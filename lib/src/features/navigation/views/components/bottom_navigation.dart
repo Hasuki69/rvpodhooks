@@ -15,7 +15,7 @@ class NavigationBottomNav extends HookConsumerWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(Gap.circle),
       ),
-      margin: const EdgeInsets.all(Gap.large),
+      margin: const EdgeInsets.all(Gap.l),
       child: NavigationBar(
         selectedIndex: selectedIndex,
         onDestinationSelected: (value) => ref
