@@ -51,10 +51,12 @@ extension DialogExtension on BuildContext {
 
   /// Show a loading dialog
   Future<T?> loading<T>({
+    Key? key,
     Widget? loadingWidget,
   }) {
     return dialog(
       child: Center(
+        key: key,
         child: loadingWidget ?? const CircularProgressIndicator(),
       ),
     );

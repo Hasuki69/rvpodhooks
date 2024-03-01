@@ -19,6 +19,7 @@ extension SnackbarExtension on BuildContext {
   /// By default, the [duration] is 3 seconds
   ///
   ScaffoldFeatureController<SnackBar, SnackBarClosedReason> snackbar({
+    Key? key,
     Widget? content,
     String? message,
     TextStyle? style,
@@ -43,6 +44,7 @@ extension SnackbarExtension on BuildContext {
   }) {
     return ScaffoldMessenger.of(this).showSnackBar(
       SnackBar(
+        key: key,
         content: content ??
             Text(
               message ?? '',

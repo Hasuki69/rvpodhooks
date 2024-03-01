@@ -9,8 +9,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.all
   ///
-  Widget gap(double? value) {
+  Widget gap(double? value, {Key? key}) {
     return Padding(
+      key: key,
       padding: EdgeInsets.all(value ?? Gap.m),
       child: this,
     );
@@ -22,8 +23,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.all but for sliver
   ///
-  Widget sliverGap(double? value) {
+  Widget sliverGap(double? value, {Key? key}) {
     return SliverPadding(
+      key: key,
       padding: EdgeInsets.all(value ?? Gap.m),
       sliver: this,
     );
@@ -39,8 +41,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.symmetric
   ///
-  Widget gapSymmetric({double horz = 0.0, double vert = 0.0}) {
+  Widget gapSymmetric({Key? key, double horz = 0.0, double vert = 0.0}) {
     return Padding(
+      key: key,
       padding: EdgeInsets.symmetric(horizontal: horz, vertical: vert),
       child: this,
     );
@@ -56,8 +59,9 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.symmetric but for sliver
   ///
-  Widget sliverGapSymmetric({double horz = 0.0, double vert = 0.0}) {
+  Widget sliverGapSymmetric({Key? key, double horz = 0.0, double vert = 0.0}) {
     return SliverPadding(
+      key: key,
       padding: EdgeInsets.symmetric(horizontal: horz, vertical: vert),
       sliver: this,
     );
@@ -78,12 +82,14 @@ extension PaddingExtension on Widget {
   /// as a shorthand for EdgeInsets.only
   ///
   Widget gapOnly({
+    Key? key,
     double left = 0.0,
     double top = 0.0,
     double right = 0.0,
     double bottom = 0.0,
   }) {
     return Padding(
+      key: key,
       padding: EdgeInsets.only(
         left: left,
         top: top,
@@ -109,12 +115,14 @@ extension PaddingExtension on Widget {
   /// as a shorthand for EdgeInsets.only but for sliver
   ///
   Widget sliverGapOnly({
+    Key? key,
     double left = 0.0,
     double top = 0.0,
     double right = 0.0,
     double bottom = 0.0,
   }) {
     return SliverPadding(
+      key: key,
       padding: EdgeInsets.only(
         left: left,
         top: top,
@@ -137,8 +145,10 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.fromLTRB
   ///
-  Widget gapLTRB(double? left, double? top, double? right, double? bottom) {
+  Widget gapLTRB(double? left, double? top, double? right, double? bottom,
+      {Key? key}) {
     return Padding(
+      key: key,
       padding: EdgeInsets.fromLTRB(
         left ?? Gap.m,
         top ?? Gap.m,
@@ -161,9 +171,10 @@ extension PaddingExtension on Widget {
   ///
   /// as a shorthand for EdgeInsets.fromLTRB but for sliver
   ///
-  Widget sliverGapLTRB(
-      double? left, double? top, double? right, double? bottom) {
+  Widget sliverGapLTRB(double? left, double? top, double? right, double? bottom,
+      {Key? key}) {
     return SliverPadding(
+      key: key,
       padding: EdgeInsets.fromLTRB(
         left ?? Gap.m,
         top ?? Gap.m,

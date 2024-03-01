@@ -7,6 +7,7 @@ import 'theme_navigation.dart';
 import 'theme_text.dart';
 import 'theme_divider.dart';
 import 'theme_topbar.dart';
+import 'theme_slider.dart';
 
 class AppTheme {
   static ThemeData get light => ThemeData(
@@ -35,6 +36,9 @@ class AppTheme {
         // Navigation Theme
         navigationBarTheme: AppNavigation.barLight,
         navigationRailTheme: AppNavigation.railLight,
+
+        // Slider Theme
+        sliderTheme: AppSlider.light,
       );
 
   static ThemeData get dark => ThemeData(
@@ -63,5 +67,8 @@ class AppTheme {
         // Navigation Theme
         navigationBarTheme: AppNavigation.barDark,
         navigationRailTheme: AppNavigation.railDark,
+
+        // Slider Theme
+        sliderTheme: AppSlider.dark,
       );
 }

@@ -1,3 +1,4 @@
+export 'extension_widget.dart';
 export 'extension_bottomsheet.dart';
 export 'extension_currency.dart';
 export 'extension_date.dart';
