@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'src/app.dart';
+import 'src/preload_app.dart';
 
 void setDeviceOrientation() {
   SystemChrome.setPreferredOrientations([
@@ -18,6 +19,8 @@ void main() {
   setDeviceOrientation();
 
   runApp(
-    const ProviderScope(child: MainApp()),
+    const ProviderScope(
+      child: PreloadApp(child: MainApp()),
+    ),
   );
 }

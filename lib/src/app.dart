@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'core/core.dart';
+import 'shared/shared.dart';
 
 class MainApp extends HookConsumerWidget {
   const MainApp({super.key});

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../core/core.dart';
-import '../extensions/extensions.dart';
+import '../shared.dart';
 
 class CThemeFAB extends ConsumerWidget {
   const CThemeFAB({super.key});
