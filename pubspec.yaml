@@ -1,9 +1,10 @@
-name: rvpodhooks_mvc
-description: "Flutter template with Riverpod Hooks, GoRouter and ResponsiveFramework."
+# Rename the project and update the description for your project
+name: rvpodhooks
+description: "Flutter template with Riverpod Hooks, GoRouter and ResponsiveFramework (Clean Architecture)"
 publish_to: "none"
 version: 0.1.0
 
-# Don't forget to update the version number in the pubspec.yaml file
+# Update the SDK version to the latest stable version
 environment:
   sdk: ">=3.3.1 <4.0.0"
 
@@ -18,7 +19,7 @@ dependencies:
   flutter_hooks: ^0.20.5
   flutter_svg: ^2.0.10+1
   freezed_annotation: ^2.4.1
-  go_router: ^13.2.0
+  go_router: ^13.2.1
   hooks_riverpod: ^2.5.1
   http: ^1.2.1
   intl: ^0.19.0
@@ -33,7 +34,7 @@ dependencies:
 #
 dev_dependencies:
   build_runner: ^2.4.8
-  custom_lint: ^0.6.2
+  custom_lint: ^0.6.4
   flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
@@ -41,6 +42,9 @@ dev_dependencies:
   json_serializable: ^6.7.1
   riverpod_lint: ^2.3.10
 
+# Assets and Fonts
+# Modify the assets and fonts section to match your project's assets and fonts
+#
 flutter:
   uses-material-design: true
   assets:

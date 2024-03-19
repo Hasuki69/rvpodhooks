@@ -8,7 +8,7 @@ class PreloadApp extends HookConsumerWidget {
   const PreloadApp({super.key, required this.child});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final pref = ref.watch(prefProvider);
+    final pref = ref.watch(preloadProvider);
     return switch (pref) {
       AsyncData() => child,
       _ => const SizedBox.shrink(),

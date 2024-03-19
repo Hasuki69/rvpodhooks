@@ -1,2 +1,1 @@
-# riverpodhooks_template
- Flutter MVC template with Riverpod Hooks, GoRouter and Responsive Framework
+# Flutter MVC Template with Riverpod & Hooks State Management.
