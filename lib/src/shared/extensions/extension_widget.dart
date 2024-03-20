@@ -247,4 +247,31 @@ extension WidgetExtension on Widget {
         filterQuality: filterQuality,
         child: this,
       );
+
+      /// A widget that applies a [Opacity] to its child.
+  /// The opacity applies to the child and the child's subtree.
+  ///
+  /// Shortcut for [Opacity].
+  ///
+  Widget opacity({
+    Key? key,
+    required double opacity,
+    bool alwaysIncludeSemantics = false,
+  }) =>
+      Opacity(
+        key: key,
+        opacity: opacity,
+        alwaysIncludeSemantics: alwaysIncludeSemantics,
+        child: this,
+      );
+
+  /// A widget that applies a [AspectRatio] to its child.
+  ///
+  /// Shortcut for [AspectRatio].
+  ///
+  Widget ratio(double aspectRatio, {Key? key}) => AspectRatio(
+        key: key,
+        aspectRatio: aspectRatio,
+        child: this,
+      );
 }
