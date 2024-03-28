@@ -11,6 +11,7 @@ class PreloadApp extends HookConsumerWidget {
     final pref = ref.watch(preloadProvider);
     return switch (pref) {
       AsyncData() => child,
+      AsyncError(:final error) => CErrorWidget(error),
       _ => const SizedBox.shrink(),
     };
   }

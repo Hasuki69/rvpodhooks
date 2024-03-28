@@ -9,3 +9,4 @@ export 'extension_snackbar.dart';
 export 'extension_theme.dart';
 export 'extension_responsive_framework.dart';
 export 'extension_sliver.dart';
+export 'extension_map.dart';
