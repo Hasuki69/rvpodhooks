@@ -6,7 +6,7 @@ version: 0.1.0
 
 # Update the SDK version to the latest stable version
 environment:
-  sdk: ">=3.3.3 <4.0.0"
+  sdk: ">=3.3.4 <4.0.0"
 
 # Core Dependencies: (add/update using pubspec assist)
 #
