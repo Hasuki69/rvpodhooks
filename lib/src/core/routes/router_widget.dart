@@ -12,7 +12,7 @@ RouteBase goRoute({
   required GlobalKey<NavigatorState>? parentNavigatorKey,
   FutureOr<String?> Function(BuildContext, GoRouterState)? redirect,
   List<RouteBase> routes = const <RouteBase>[],
-  FutureOr<bool> Function(BuildContext)? onExit,
+  FutureOr<bool> Function(BuildContext, GoRouterState)? onExit,
 }) {
   return GoRoute(
     name: name,
