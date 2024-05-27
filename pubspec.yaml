@@ -1,12 +1,12 @@
 # Rename the project and update the description for your project
 name: rvpodhooks
-description: "Flutter template with Riverpod Hooks, GoRouter and ResponsiveFramework (Clean Architecture)"
+description: "Riverpod Hooks, GoRouter and ResponsiveFramework"
 publish_to: "none"
 version: 0.1.0
 
 # Update the SDK version to the latest stable version
 environment:
-  sdk: ">=3.3.4 <4.0.0"
+  sdk: ">=3.4.1 <4.0.0"
 
 # Core Dependencies: (add/update using pubspec assist)
 #
@@ -35,7 +35,7 @@ dependencies:
 dev_dependencies:
   build_runner: ^2.4.9
   custom_lint: ^0.6.4
-  flutter_lints: ^3.0.2
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
   freezed: ^2.5.2
