@@ -1,7 +1,6 @@
 # Rename the project and update the description for your project
 name: rvpodhooks
-description: "Flutter template with Riverpod Hooks, GoRouter and
-  ResponsiveFramework (Clean Architecture)"
+description: "Flutter template with Riverpod Hooks, GoRouter and ResponsiveFramework (Clean Architecture)"
 publish_to: "none"
 version: 0.1.0
 
