@@ -4,7 +4,7 @@ import '../../core/core.dart';
 class AppButtonStyle {
   static ButtonStyle get style => ButtonStyle(
         tapTargetSize: MaterialTapTargetSize.padded,
-        textStyle: MaterialStatePropertyAll(AppTextStyle.titleSmall),
+        textStyle: WidgetStatePropertyAll(AppTextStyle.titleSmall),
       );
 
   // ElevatedButtonThemeData

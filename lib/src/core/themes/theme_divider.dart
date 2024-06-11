@@ -7,10 +7,10 @@ class AppDivider {
       const DividerThemeData(space: .1, thickness: .5);
 
   static DividerThemeData get light => style.copyWith(
-        color: AppColor.light.onBackground.withOpacity(.5),
+        color: AppColor.light.onSurface.withOpacity(.5),
       );
 
   static DividerThemeData get dark => style.copyWith(
-        color: AppColor.dark.onBackground.withOpacity(.5),
+        color: AppColor.dark.onSurface.withOpacity(.5),
       );
 }

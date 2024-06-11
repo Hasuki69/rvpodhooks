@@ -15,10 +15,10 @@ class AppNavigation {
 
   static NavigationBarThemeData get barLight => NavigationBarThemeData(
         labelTextStyle:
-            MaterialStatePropertyAll(AppTextStyle.light.labelMedium),
+            WidgetStatePropertyAll(AppTextStyle.light.labelMedium),
       );
 
   static NavigationBarThemeData get barDark => NavigationBarThemeData(
-        labelTextStyle: MaterialStatePropertyAll(AppTextStyle.dark.labelMedium),
+        labelTextStyle: WidgetStatePropertyAll(AppTextStyle.dark.labelMedium),
       );
 }

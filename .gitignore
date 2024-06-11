@@ -50,3 +50,9 @@ app.*.map.json
 /macos/
 /web/
 /test/
+
+# Environment configuration
+*.env
+
+# .lock files should be ignored
+*.lock

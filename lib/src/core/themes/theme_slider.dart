@@ -25,7 +25,7 @@ class AppSlider {
         overlayColor: Colors.transparent,
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 0),
 
-        inactiveTrackColor: AppColor.light.onBackground.withOpacity(.1),
+        inactiveTrackColor: AppColor.light.onSurface.withOpacity(.1),
 
         // Thumb Shape
         thumbColor: Colors.transparent,
@@ -54,7 +54,7 @@ class AppSlider {
         overlayColor: Colors.transparent,
         overlayShape: const RoundSliderOverlayShape(overlayRadius: 0),
 
-        inactiveTrackColor: AppColor.dark.onBackground.withOpacity(.1),
+        inactiveTrackColor: AppColor.dark.onSurface.withOpacity(.1),
 
         // Thumb Shape
         thumbColor: Colors.transparent,
