@@ -40,6 +40,7 @@ dev_dependencies:
   freezed: ^2.5.2
   json_serializable: ^6.8.0
   riverpod_lint: ^2.3.10
+  vector_graphics_compiler: ^1.1.11+1
 
 # Assets and Fonts
 # Modify the assets and fonts section to match your project's assets and fonts
@@ -48,8 +49,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/icons/
     - assets/animations/
+    - assets/svgs/
   fonts:
     - family: Roboto
       fonts:

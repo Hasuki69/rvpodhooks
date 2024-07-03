@@ -53,6 +53,7 @@ app.*.map.json
 
 # Environment configuration
 *.env
+!example.env
 
 # .lock files should be ignored
 *.lock

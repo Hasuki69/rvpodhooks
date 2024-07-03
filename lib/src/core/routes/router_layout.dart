@@ -51,7 +51,6 @@ class BoxWidth extends StatelessWidget {
             Condition.largerThan(name: '2K', value: 2560),
             Condition.largerThan(name: '8K', value: 7680),
           ],
-          // defaultValue: context.width,
         ).value,
         child: BouncingScrollWrapper.builder(context, child),
       ),
