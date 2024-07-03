@@ -7,12 +7,20 @@ import 'package:flutter/material.dart';
 enum FlipAxis { vert, horz, both }
 
 extension WidgetExtension on Widget {
+  /// Show the widget if the condition is true.
+  /// Otherwise, return null.
+  Widget? showIf(bool condition) {
+    if (condition) {
+      return this;
+    }
+    return null;
+  }
+
   /// A widget that centers its child within itself.
   ///
   /// Shortcut for [Center].
   ///
-  Widget center({Key? key, double? widthFactor, double? heightFactor}) =>
-      Center(
+  Widget center({Key? key, double? widthFactor, double? heightFactor}) => Center(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -51,8 +59,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.topCenter].
   ///
-  Widget alignTop({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignTop({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -62,8 +69,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.topLeft].
   ///
-  Widget alignTopLeft({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignTopLeft({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -73,8 +79,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.topRight].
   ///
-  Widget alignTopRight({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignTopRight({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -84,8 +89,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.bottomCenter].
   ///
-  Widget alignBottom({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignBottom({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -95,9 +99,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.bottomLeft].
   ///
-  Widget alignBottomLeft(
-          {Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignBottomLeft({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -107,9 +109,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.bottomRight].
   ///
-  Widget alignBottomRight(
-          {Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignBottomRight({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -119,8 +119,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.centerLeft].
   ///
-  Widget alignLeft({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignLeft({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -130,8 +129,7 @@ extension WidgetExtension on Widget {
 
   /// Creates an alignment widget with the alignment set to [Alignment.centerRight].
   ///
-  Widget alignRight({Key? key, double? widthFactor, double? heightFactor}) =>
-      Align(
+  Widget alignRight({Key? key, double? widthFactor, double? heightFactor}) => Align(
         key: key,
         widthFactor: widthFactor,
         heightFactor: heightFactor,
@@ -248,7 +246,7 @@ extension WidgetExtension on Widget {
         child: this,
       );
 
-      /// A widget that applies a [Opacity] to its child.
+  /// A widget that applies a [Opacity] to its child.
   /// The opacity applies to the child and the child's subtree.
   ///
   /// Shortcut for [Opacity].
