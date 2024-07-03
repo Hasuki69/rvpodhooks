@@ -1,7 +1,6 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final searchProvider =
-    NotifierProvider.autoDispose<SearchNotifier, String>(SearchNotifier.new);
+final searchProvider = AutoDisposeNotifierProvider<SearchNotifier, String>(SearchNotifier.new);
 
 class SearchNotifier extends AutoDisposeNotifier<String> {
   @override
@@ -12,4 +11,6 @@ class SearchNotifier extends AutoDisposeNotifier<String> {
     // TODO: implement state
     super.state = value;
   }
+
+  void set(String value) => state = value;
 }

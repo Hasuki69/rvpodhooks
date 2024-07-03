@@ -14,6 +14,7 @@ class SplashView extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final preload = ref.watch(preloadProvider(context));
     // This is the equivalent of the `initState` method in a StatefulWidget
     // It runs only once when the widget is first created
     // It's a good place to put logic that only needs to run once
@@ -21,8 +22,8 @@ class SplashView extends HookConsumerWidget {
     // In this case, we're using it to navigate to the HomeView after a delay of 2 seconds
     useEffect(() {
       WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-        Future.delayed(duration, () {
-          context.go(HomeView.routeName);
+        preload.whenData((_) {
+          Future.delayed(duration, () => context.go(HomeView.routeName));
         });
       });
 

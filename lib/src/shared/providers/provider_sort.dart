@@ -2,8 +2,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 enum SortType { none, asc, desc }
 
-final sortProvider =
-    NotifierProvider.autoDispose<SortNotifier, SortType>(SortNotifier.new);
+final sortProvider = AutoDisposeNotifierProvider<SortNotifier, SortType>(SortNotifier.new);
 
 class SortNotifier extends AutoDisposeNotifier<SortType> {
   @override
@@ -14,4 +13,6 @@ class SortNotifier extends AutoDisposeNotifier<SortType> {
     // TODO: implement state
     super.state = value;
   }
+
+  void set(SortType value) => state = value;
 }
