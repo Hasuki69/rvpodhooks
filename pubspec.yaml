@@ -10,14 +10,16 @@ environment:
 
 # Core Dependencies: (add/update using pubspec assist)
 #
-# hooks_riverpod,flutter_hooks,go_router,responsive_framework,intl,animations,json_annotation,freezed_annotation,http,shared_preferences,vector_graphics
+# hooks_riverpod,flutter_hooks,go_router,responsive_framework,intl,animations,json_annotation,freezed_annotation,http,shared_preferences,vector_graphics,gap,dartx
 #
 dependencies:
   animations: ^2.0.11
+  dartx: ^1.2.0
   flutter:
     sdk: flutter
   flutter_hooks: ^0.20.5
   freezed_annotation: ^2.4.2
+  gap: ^3.0.1
   go_router: ^14.2.0
   hooks_riverpod: ^2.5.1
   http: ^1.2.1
