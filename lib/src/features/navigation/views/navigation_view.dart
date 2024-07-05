@@ -16,9 +16,9 @@ class NavigationView extends HookConsumerWidget {
     return Scaffold(
       extendBody: true,
       appBar: context.isMobile
-          ? PreferredSize(
-              preferredSize: Size.fromHeight(context.toolbarHeight),
-              child: const NavigationAppbar(),
+          ? const PreferredSize(
+              preferredSize: Size.fromHeight(kToolbarHeight),
+              child: NavigationAppbar(),
             )
           : null,
       body: Row(
@@ -30,8 +30,7 @@ class NavigationView extends HookConsumerWidget {
           Expanded(child: child),
         ],
       ),
-      bottomNavigationBar:
-          context.isMobile ? const NavigationBottomNav() : null,
+      bottomNavigationBar: context.isMobile ? const NavigationBottomNav() : null,
       floatingActionButton: const CThemeFAB(),
     );
   }

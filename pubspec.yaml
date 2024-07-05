@@ -28,6 +28,10 @@ dependencies:
   responsive_framework: ^1.4.0
   shared_preferences: ^2.2.3
   vector_graphics: ^1.1.11+1
+  exposed:
+    git:
+      url: https://github.com/Hasuki69/exposed.git
+      ref: main
 
 # Core Dev Dependencies: (add/update using pubspec assist)
 #

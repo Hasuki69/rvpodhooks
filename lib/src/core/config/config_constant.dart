@@ -1,5 +1,5 @@
+import 'package:exposed/exposed.dart';
 import 'package:flutter/material.dart';
-import '../../shared/shared.dart';
 
 class Config {
   static const String appName = 'Riverpod Hooks Template';

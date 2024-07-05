@@ -1,9 +1,9 @@
+import 'package:exposed/exposed.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../../core/core.dart';
-import '../../../shared/shared.dart';
 
 class HomeView extends HookConsumerWidget {
   const HomeView({super.key});
@@ -23,32 +23,32 @@ class HomeView extends HookConsumerWidget {
               Text('Label Medium', style: context.labelMedium),
               Text('Label Large', style: context.labelLarge),
             ]),
-            const Divider().gapSymmetric(vert: Gap.s),
+            const Divider().padSymmetric(vert: Gap.s),
             Column(children: [
               Text('Body Small', style: context.bodySmall),
               // By default, it's the same as bodyMedium
               Text('Body Medium', style: context.bodyMedium),
               Text('Body Large', style: context.bodyLarge),
             ]),
-            const Divider().gapSymmetric(vert: Gap.s),
+            const Divider().padSymmetric(vert: Gap.s),
             Column(children: [
               Text('Title Small', style: context.titleSmall),
               Text('Title Medium', style: context.titleMedium),
               Text('Title Large', style: context.titleLarge),
             ]),
-            const Divider().gapSymmetric(vert: Gap.s),
+            const Divider().padSymmetric(vert: Gap.s),
             Column(children: [
               Text('Heading Small', style: context.headlineSmall),
               Text('heading Medium', style: context.headlineMedium),
               Text('Heading Large', style: context.headlineLarge),
             ]),
-            const Divider().gapSymmetric(vert: Gap.s),
+            const Divider().padSymmetric(vert: Gap.s),
             Column(children: [
               Text('Display Small', style: context.displaySmall),
               Text('Display Medium', style: context.displayMedium),
               Text('Display Large', style: context.displayLarge),
             ]),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             Row(
               children: [
                 Expanded(
@@ -72,7 +72,7 @@ class HomeView extends HookConsumerWidget {
                 ),
               ],
             ),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             Slider(
               value: slider.value,
               onChanged: (val) => slider.value = val,
@@ -81,7 +81,7 @@ class HomeView extends HookConsumerWidget {
               values: rangeSlider.value,
               onChanged: (val) => rangeSlider.value = val,
             ),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             Row(
               children: [
                 Expanded(
@@ -162,14 +162,14 @@ class HomeView extends HookConsumerWidget {
                 ),
               ],
             ),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             const Card(child: ListTile()),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             TextFormField(),
-            const Divider().gapSymmetric(vert: Gap.l),
+            const Divider().padSymmetric(vert: Gap.l),
             const Card(child: AspectRatio(aspectRatio: 1)),
           ]),
-        ).sliverGapLTRB(null, null, null, Gap.huge * 2),
+        ).padLTRB(Gap.m, Gap.m, Gap.m, Gap.huge * 2),
       ],
     );
   }
