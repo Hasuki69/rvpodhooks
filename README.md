@@ -10,13 +10,15 @@
 6. Riverpod Lint, Custome Lint <i> (Linter for riverpod) </i>
 7. Build Runner <i> (Dart code generator) </i>
 
-### <b> Custom Extension : </b>
+### <b> Additional Packages : </b>
 
 1. Vector Graphics, Vector Graphics Compiler <i> (SVG renderer & optimize) </i>
 2. Shared Preferences <i> (Simple key-value pairs storage) </i>
 3. Intl <i> (Internationalized, date & number format & parse, etc) </i>
 4. Http <i> (Http request) </i>
 5. Animations <i> (Fancy pre-built animations) </i>
+6. Gap <i> (Easily adding gaps inside Flex widgets) </i>
+7. Dartx <i> (Collection of useful static extension methods) </i>
 
 ### <b> Additional Config </b>
 
