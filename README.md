@@ -17,8 +17,7 @@
 3. Intl <i> (Internationalized, date & number format & parse, etc) </i>
 4. Http <i> (Http request) </i>
 5. Animations <i> (Fancy pre-built animations) </i>
-6. Gap <i> (Easily adding gaps inside Flex widgets) </i>
-7. Dartx <i> (Collection of useful static extension methods) </i>
+6. Dartx <i> (Collection of useful static extension methods) </i>
 
 ### <b> Additional Config </b>
 
