@@ -31,6 +31,7 @@ dependencies:
     git:
       url: https://github.com/Hasuki69/exposed.git
       ref: main
+      # ref: exposed-untied
 
 # Core Dev Dependencies: (add/update using pubspec assist)
 #

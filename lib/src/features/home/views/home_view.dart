@@ -169,7 +169,7 @@ class HomeView extends HookConsumerWidget {
             const Divider().padSymmetric(vert: Gap.l),
             const Card(child: AspectRatio(aspectRatio: 1)),
           ]),
-        ).padLTRB(Gap.m, Gap.m, Gap.m, Gap.huge * 2),
+        ),
       ],
     );
   }

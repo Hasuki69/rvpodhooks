@@ -25,7 +25,7 @@ class NavigationView extends HookConsumerWidget {
         children: [
           if (!context.isMobile) ...const [
             NavigationSideNav(),
-            VerticalDivider(),
+            VerticalDivider(width: 0.2),
           ],
           Expanded(child: child),
         ],

@@ -7,10 +7,6 @@ class NavigationAppbar extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return AppBar(
       title: const Text('Navigation Appbar'),
-      bottom: const PreferredSize(
-        preferredSize: Size.fromHeight(0),
-        child: Divider(),
-      ),
     );
   }
 }

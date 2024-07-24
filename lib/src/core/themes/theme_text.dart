@@ -137,14 +137,18 @@ class AppTextStyle {
   );
 
   static TextTheme get dark => textTheme.apply(
-        fontFamily: Config.fontFamily,
-        displayColor: const Color(0xFFEEEEEE).withOpacity(0.8),
-        bodyColor: const Color(0xFFEEEEEE).withOpacity(0.8),
+      fontFamily: Config.fontFamily,
+      displayColor: const Color(0xFFFFFFFF),
+      //.withOpacity(0.8),
+      bodyColor: const Color(0xFFFFFFFF)
+      //.withOpacity(0.8),
       );
 
   static TextTheme get light => textTheme.apply(
-        fontFamily: Config.fontFamily,
-        displayColor: const Color(0xFF111111).withOpacity(0.8),
-        bodyColor: const Color(0xFF111111).withOpacity(0.8),
+      fontFamily: Config.fontFamily,
+      displayColor: const Color(0xFF000000),
+      //.withOpacity(0.8),
+      bodyColor: const Color(0xFF000000)
+      //.withOpacity(0.8),
       );
 }
