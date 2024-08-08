@@ -20,7 +20,7 @@ class SplashView extends HookConsumerWidget {
     useEffect(() {
       WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
         preload.whenData((_) {
-          Future.delayed(duration, () => context.go(HomeView.routeName));
+          Future.delayed(duration, () => context.mounted ? context.go(HomeView.routeName) : null);
         });
       });
 
