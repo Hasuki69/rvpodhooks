@@ -30,7 +30,7 @@ dependencies:
   intl: ^0.19.0
   json_annotation: ^4.9.0
   responsive_framework: ^1.4.0
-  shared_preferences: ^2.3.1
+  shared_preferences: ^2.3.2
   vector_graphics: ^1.1.11+1
 
 # Core Dev Dependencies: (add/update using pubspec assist)
@@ -39,7 +39,7 @@ dependencies:
 #
 dev_dependencies:
   build_runner: ^2.4.12
-  custom_lint: ^0.6.4
+  custom_lint: ^0.6.5
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter

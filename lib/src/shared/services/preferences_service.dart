@@ -6,7 +6,9 @@ class _PrefService {
 
   Future<void> setPref(String key, dynamic value) async {
     // Initialize the SharedPreferences
-    final pref = await SharedPreferences.getInstance();
+    final pref = await SharedPreferencesWithCache.create(
+      cacheOptions: const SharedPreferencesWithCacheOptions(),
+    );
 
     // Set the value based on the type
     if (value is String) {
@@ -23,17 +25,26 @@ class _PrefService {
   }
 
   Future<dynamic> getPref(String key, dynamic def) async {
-    final pref = await SharedPreferences.getInstance();
+    final pref = await SharedPreferencesWithCache.create(
+      cacheOptions: const SharedPreferencesWithCacheOptions(),
+    );
+
     return pref.get(key) ?? def;
   }
 
   Future<void> removePref(String key) async {
-    final pref = await SharedPreferences.getInstance();
+    final pref = await SharedPreferencesWithCache.create(
+      cacheOptions: const SharedPreferencesWithCacheOptions(),
+    );
+
     pref.remove(key);
   }
 
   Future<void> clearPref() async {
-    final pref = await SharedPreferences.getInstance();
+    final pref = await SharedPreferencesWithCache.create(
+      cacheOptions: const SharedPreferencesWithCacheOptions(),
+    );
+
     pref.clear();
   }
 }
