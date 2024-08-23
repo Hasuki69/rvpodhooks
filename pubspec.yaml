@@ -16,8 +16,7 @@ dependencies:
   animations: ^2.0.11
   dartx: ^1.2.0
   exposed:
-    git:
-      url: https://github.com/Hasuki69/exposed.git
+    git: https://github.com/Hasuki69/exposed.git
   flutter:
     sdk: flutter
   flutter_hooks: ^0.20.5
