@@ -39,7 +39,7 @@ class BoxWidth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaxWidthBox(
-      background: Container(color: backgroundColor),
+      backgroundColor: backgroundColor,
       maxWidth: maxWidth,
       child: ResponsiveScaledBox(
         autoCalculateMediaQueryData: false,
