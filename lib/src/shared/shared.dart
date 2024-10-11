@@ -1,4 +1,4 @@
-library shared;
+library;
 
 export 'extensions/extensions.dart';
 export 'functions/functions.dart';

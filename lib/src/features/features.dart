@@ -1,4 +1,4 @@
-library features;
+library;
 
 export 'splash/splash.dart';
 export 'navigation/navigation.dart';

@@ -1,4 +1,4 @@
-library core;
+library;
 
 export 'config/config.dart';
 export 'themes/themes.dart';
